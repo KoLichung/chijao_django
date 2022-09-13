@@ -1,1 +1,1 @@
-# chijao_django
+# chijia_django
