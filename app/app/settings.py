@@ -28,6 +28,7 @@ ALLOWED_HOSTS = [
     '167.179.95.80',
     '127.0.0.1',
     'localhost',
+    'chijia.com.tw',
 ]
 
 ADMINS = (
