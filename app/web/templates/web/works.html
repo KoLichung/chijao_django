@@ -1,0 +1,90 @@
+{% extends 'web/base.html' %} {% block content %}
+{% load static %}
+
+<!-- content -->
+<div class="bg-white">
+  <div class="mx-auto pt-5 pb-3" style="max-width: 1000px;">
+    <p class="dark-title">合作案例</p>
+
+    <div class="row work-box mx-2">
+      <div class="col-12 col-md-7">
+        <div class="mx-3">
+          <p class="work-title">財報先生</p>
+          <p class="work-sub-title">iOS/Android App、官網、資料庫</p>
+          <p class="work-text">以價值投資為核心，提供投資人方便查看公司財報數據、回測等價值估算等</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 align-self-start">
+        <div class="text-center">
+          <img src="{% static 'web/assets/img/work_stock.png' %}" alt="" class="img-fluid work-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="row work-box mx-2">
+      <div class="col-12 col-md-7">
+        <div class="mx-3">
+          <p class="work-title">計程車派車 </p>
+          <p class="work-sub-title">iOS/Android App、後台管理系統</p>
+          <p class="work-text">結合 LINE Bot 機器人，叫車更直覺方便！</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 align-self-start">
+        <div class="text-center">
+          <img src="{% static 'web/assets/img/work_taxi.png' %}" alt="" class="img-fluid work-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="row work-box mx-2">
+      <div class="col-12 col-md-7">
+        <div class="mx-3">
+          <p class="work-title">遊覽車出租 </p>
+          <p class="work-sub-title">iOS/Android App、後台管理系統</p>
+          <p class="work-text">提供消費者方便的遊覽車租賃服務</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 align-self-start">
+        <div class="text-center">
+          <img src="{% static 'web/assets/img/work_bus.png' %}" alt="" class="img-fluid work-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="row work-box mx-2">
+      <div class="col-12 col-md-6">
+        <div class="mx-3">
+          <p class="work-title">Care168照護 </p>
+          <p class="work-sub-title">iOS/Android App、官網、後台管理系統</p>
+          <p class="work-text">配對媒合看護與有需求的家庭用戶</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 align-self-start">
+        <div class="text-center">
+          <img src="{% static 'web/assets/img/work_care168.png' %}" alt="" class="img-fluid work-img-devices">
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <div class="row work-box mx-2">
+        <div class="col-12 col-md-6">
+          <div class="mx-3">
+            <p class="work-title">二小姐甜點 </p>
+            <p class="work-sub-title">RWD 響應式電商官網、訂單系統後台</p>
+            <p class="work-text">含會員系統、後台訂單系統、第三方金流串接</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 align-self-start">
+          <div class="text-center">
+            <img src="{% static 'web/assets/img/work_lady_two.png' %}" alt="" class="img-fluid work-img-devices">
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+</div>
+    
+{% endblock %}
+  

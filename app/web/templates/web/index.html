@@ -1,0 +1,182 @@
+{% extends 'web/base.html' %} {% block content %}
+{% load static %}
+
+<!-- intro -->
+<div class="intro-bg">
+  <div class="mx-auto" style="max-width: 1200px;">
+    <div class="row justify-content-center py-8">
+      <div class="col-12 col-md-5 col-lg-6 col-xl-5" >
+        <div class="mx-5 ">
+          <p class="intro-title overflow-hidden">讓我們</p>
+          <div class="intro-title-bg">
+            <span class="typed-text" data-typed-text='["實現你的計畫"]'></span>
+          </div>
+          <div class="mt-3">
+            <span class="h4"><b>有手機APP的點子卻無法實現嗎？</b></span> <br>
+            <p class="mt-2">我們有多年專業開發經驗，iOS / Android App、後台系統、網站製作，可以幫您實現計劃！</p>
+          </div>
+          <div class="mt-5">
+            <a href="{% url 'contact' %}" class="btn blue-button">
+              服務諮詢
+              <span class="far fa-hand-pointer"></span>
+            </a>
+          </div> 
+        </div>
+      </div>
+      <div class="col-12 col-md-7 col-lg-6 col-xl-7">
+        <div class="mx-xl-3 my-xl-1 mx-lg-3 my-lg-3 mx-md-5 my-md-5   mx-sm-7 my-sm-3 ms-5 me-4 mt-4 mb-2">
+          <img src="{% static 'web/assets/img/index_intro.png' %}" alt="" class="img-fluid" style="max-width: 100%; height: auto;"> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- service flow -->
+<div class="flow-bg">
+  <div class="d-bloc mx-auto" style="max-width: 1400px;">
+    <p class="light-title">服務流程</p>
+    <div class="row">
+      <div class="col-md-12 col-lg-6 mt-3 d-flex justify-content-center justify-content-lg-end">
+        
+        <div class="position-relative flow-step me-3">
+          <img src="{% static 'web/assets/img/step1.png' %}" alt="" style="width: 40px;">
+          <p class="flow-step-title">需求諮詢</p>
+          <div class="position-absolute top-0 start-0">
+            <div class="flow-step-num ">1</div>
+          </div>
+        </div>
+  
+        <div class="position-relative flow-step me-3">
+          <img src="{% static 'web/assets/img/step2.png' %}" alt="" style="width: 40px;">
+          <p class="flow-step-title">報價</p>
+          <div class="position-absolute top-0 start-0">
+            <div class="flow-step-num ">2</div>
+          </div>
+        </div>
+  
+        <div class="position-relative flow-step">
+          <img src="{% static 'web/assets/img/step3.png' %}" alt="" style="width: 40px;">
+            <p class="flow-step-title">簽訂合約</p>
+            <div class="position-absolute top-0 start-0">
+              <div class="flow-step-num ">3</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-6  mt-3 d-flex justify-content-center justify-content-lg-start">
+        <div class="position-relative flow-step  me-3">
+          <img src="{% static 'web/assets/img/step4.png' %}" alt="" style="width: 40px;">
+          <p class="flow-step-title">軟體開發</p>
+          <div class="position-absolute top-0 start-0">
+            <div class="flow-step-num ">4</div>
+          </div>
+        </div>
+
+        <div class="position-relative flow-step  me-3">
+          <img src="{% static 'web/assets/img/step5.png' %}" alt="" style="width: 40px;">
+          <p class="flow-step-title">成果驗收</p>
+          <div class="position-absolute top-0 start-0">
+            <div class="flow-step-num ">5</div>
+          </div>
+        </div>
+
+        <div class="position-relative flow-step">
+          <img src="{% static 'web/assets/img/step6.png' %}" alt="" style="width: 40px;">
+          <p class="flow-step-title">產品上線</p>
+          <div class="position-absolute top-0 start-0">
+            <div class="flow-step-num ">6</div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- service items -->
+<div class="service-bg">
+  <div class="d-bloc mx-auto" style="max-width: 1200px;">
+    <p class="dark-title">服務項目</p>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-4">
+        <div class="service-box h-100">
+          <div class="service-item-title">手機應用程式開發</div>
+          <div class="service-item-text">過去開發 iOS/Android 的 App 因為兩者系統不同，程式開發的時間要花兩倍。現在，我們利用新技術，用更短的時間更快完成雙平台的 App！</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-4">
+        <div class="service-box h-100">
+          <div class="service-item-title">響應式網頁</div>
+          <div class="service-item-text">網站內容不因裝置不同而影響閱讀！手機、平板、電腦各種大小尺寸螢幕皆可以達到最佳瀏覽狀態！</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-4">
+        <div class="service-box h-100">
+          <div class="service-item-title">線上金流服務</div>
+          <div class="service-item-text">提供第三方金流服務串接，消費者可使用信用卡、ATM、超商等多元付款方式消費，方便又安全！</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-4">
+        <div class="service-box h-100">
+          <div class="service-item-title">後台系統</div>
+          <div class="service-item-text">方便經營管理專案內容，客製化設計專案所需工具、圖表等。</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-4">
+        <div class="service-box h-100">
+          <div class="service-item-title">規模化應用</div>
+          <div class="service-item-text">使用 AWS 雲端服務可多人同時使用系統，負載不當機！</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 mb-sm-3 mb-4">
+        <div class="service-box h-100">
+          <div class="service-item-title">社群機器人</div>
+          <div class="service-item-text">LINE Bot 機器人可自動完成客戶基本需求：回答較簡易的問題，也可以執行訂位、金流付款，甚至叫車等多元服務。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial -->
+<div class="text-center pt-4 pb-5" style="background-color: #E5E5E5;">
+    <div class="container">
+      <p class="dark-title">客戶回饋</p>
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <div class="swiper-container theme-slider mb-2" data-swiper='{"autoplay":true,"spaceBetween":5,"loop":true,"loopedSlides":5,"slideToClickedSlide":true}'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="px-5 px-sm-6">
+                  <p class="fs-sm-1 fs-md-2 fst-italic text-dark">“ 服務專業，會為客戶著想 ”</p>
+                  <p class="fs-0 text-600">台中 林小姐</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="px-5 px-sm-6">
+                  <p class="fs-sm-1 fs-md-2 fst-italic text-dark">“ 收費合理而且成果令人滿意，之後有其他需要會再找柯先生。 ”</p>
+                  <p class="fs-0 text-600">雲林 陳先生</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="px-5 px-sm-6">
+                  <p class="fs-sm-1 fs-md-2 fst-italic text-dark">“ 回覆很即時，有問必答，態度很專業~~ ”</p>
+                  <p class="fs-0 text-600">苗栗 劉先生</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav">
+              <div class="swiper-button-next swiper-button-white"></div>
+              <div class="swiper-button-prev swiper-button-white"> </div>
+            </div>
+          </div>
+          <a href="{% url 'contact' %}" class="btn blue-button">
+            點我立即諮詢 
+            <span class="far fa-hand-pointer"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

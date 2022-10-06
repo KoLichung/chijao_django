@@ -1,0 +1,300 @@
+/* -------------------------------------------------------------------------- */
+/*                                chijia Button                               */
+/* -------------------------------------------------------------------------- */
+/* prettier-ignore */
+/*# sourceMappingURL=user.css.map */
+
+
+.blue-button{
+  background-color: #084994;
+  color: white;
+  font-size: 12pt;
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+
+.yellow-button{
+  background-color: #D7A96D;
+  color: white;
+  font-size: 12pt;
+  padding: 8px 40px;
+  border-radius: 50px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.intro-bg{
+  background-image: url('/static/web/assets/img/index_intro_bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.intro-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #D7A96D;
+}
+
+.intro-title-bg{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: white;
+  background-color: #D7A96D;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.intro-img{
+  max-width: 380px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+.flow-bg{
+  background-color: #E6CBA9;
+  padding: 2rem;
+}
+
+.light-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.flow-step-num{
+  background-color: #EBEBEB;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  color: #85581D;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  padding: 3px 0;
+
+}
+
+.flow-step{
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 90px;
+  padding: 15px 0;
+  /* margin: auto; */
+  display: block;
+  text-align: center;
+}
+
+.flow-step-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #85581D;
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+.service-bg{
+  background-color: #FAFAFA;
+  padding: 2rem;
+}
+
+.dark-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 40px;
+  color: #092240;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+
+.service-box{
+  background-color: white;
+  box-shadow: 4px 3px 5px 0px #dcdcdc;
+  padding: 1.2rem 2rem;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+
+}
+
+.service-item-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #092240;
+  text-decoration: underline;
+  text-underline-offset: -6px;
+  text-decoration-thickness: 10px;
+  text-decoration-color: #E6CBA9;
+}
+
+.service-item-text{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9DA8BA;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+.footer-bg{
+  background-color: #0B1828;
+  padding: 2rem;
+}
+
+.footer-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  color: #D7A96D;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.thead-bg{
+ background-color: #D7A96D;
+ 
+}
+
+.thead-sub-bg{
+  background-color: #E6CBA9;
+  
+}
+
+.thead-title{
+  font-family: 'Noto Sans CJK TC';
+  color: #092240;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
+
+.thead-sub-title{
+  font-weight: 600;
+  font-size: 15px;
+  color: #85581D;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+.form-valid-text{
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.work-img{
+  position: absolute;
+  width: 230px;
+  z-index: 9;
+  bottom: 20px;
+  right: 100px;
+}
+
+@media(max-width:768px){
+  .work-img{
+    position: absolute;
+    width: 230px;
+    z-index: 9;
+    bottom: 30px;
+    right: 76px;
+  }
+}
+
+.work-img-devices{
+  position: absolute;
+  width: 430px;
+  z-index: 9;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media(max-width:768px){
+  .work-img-devices{
+    position: absolute;
+    width: 430px;
+    z-index: 9;
+    bottom: 40px;
+    right: 18px;
+  }
+}
+
+.work-box{
+  position: relative;
+  background-color: #D7A96D;
+  padding: 2rem;
+  height: 200px;
+  margin-top: 9rem;
+}
+
+@media(max-width:768px){
+  .work-box{
+    position: relative;
+    background-color: #D7A96D;
+    padding: 2rem 1rem;
+    height: 560px;
+    margin-top: 3rem;
+  }
+}
+
+
+.work-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.work-sub-title{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #85581D;
+  background-color: #D9D9D9;
+  padding: 8px 16px;
+  display: inline-block;
+}
+
+.work-text{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}

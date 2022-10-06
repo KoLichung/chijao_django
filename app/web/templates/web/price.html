@@ -1,0 +1,217 @@
+{% extends 'web/base.html' %} {% block content %}
+{% load static %}
+
+  <!-- tables -->
+  <div class="bg-white">
+    <div class="mx-auto pt-5 pb-3" style="max-width: 800px;">
+      <p class="dark-title">價格一覽表</p>
+
+      <!-- table 1 app -->
+      <div class="mt-2 mb-7 mx-3">
+        <div id="tableExample2" data-list='{"valueNames":["name","email","age"],}'>
+          <div class="table-responsive scrollbar">
+            <table class="table  table-striped fs--1 mb-0">
+              <thead class="thead-bg">
+                <tr>
+                  <th colspan="3" class="thead-title">手機App</th> 
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td colspan="2">製作Android 跟 iOS 雙平台 APP (Flutter)</td>
+                  <td class="text-end">$30000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">會員登入(自訂欄位, ex. Email or Phone)</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">社群登入(一項, ex.Line, Facebook, Apple)</td>
+                  <td class="text-end">$8000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">簡訊認證</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">推播(可設 3 個推播條件, 額外 1 條件 + $5000)</td>
+                  <td class="text-end">$20000</td>
+                </tr>
+              </tbody>
+
+              <thead class="thead-sub-bg">
+                <tr>
+                  <th colspan="3" class="thead-sub-title">金流基本相關</th>
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td colspan="2">金流交易</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">其他 api, ex.撥款, 扣款, 退款等, 每項 api</td>
+                  <td class="text-end">$8000</td>
+                </tr>
+              </tbody>
+
+              <thead class="thead-sub-bg">
+                <tr>
+                  <th colspan="3" class="thead-sub-title">地圖基本相關</th>
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td colspan="2">顯示地圖</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">標記</td>
+                  <td class="text-end">$8000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">紀錄路線</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+              </tbody>
+
+              <thead class="thead-sub-bg">
+                <tr>
+                  <th colspan="3" class="thead-sub-title">購物相關</th>
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td colspan="2">商品列表</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">商品詳細資料</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">購物車</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">購物記錄列表</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">購物記錄明細</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+              </tbody>
+
+              <thead class="thead-sub-bg">
+                <tr>
+                  <th colspan="3" class="thead-sub-title">交友相關</th>
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td colspan="2">通訊聊聊(文字, 圖片)</td>
+                  <td class="text-end">$35000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">直播</td>
+                  <td class="text-end">依內容報價</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- table 2 後台相關 -->
+      <div class="m-2 mb-7 mx-3">
+        <div id="tableExample2" data-list='{"valueNames":["name","email","age"],}'>
+          <div class="table-responsive scrollbar">
+            <table class="table  table-striped fs--1 mb-0">
+              <thead class="thead-bg">
+                <tr>
+                  <th colspan="3" class="thead-title">後台相關</th> 
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td colspan="2">管理員登入系統(可以有數個管理員帳號，會先給一個超級管理員帳號)</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">會員列表</td>
+                  <td class="text-end">$8000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">會員詳細</td>
+                  <td class="text-end">$8000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">金流串接(交易, 額外 api  須額外報價)</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">地圖與顯示標記</td>
+                  <td class="text-end">$18000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">電子發票串接(單一 api )</td>
+                  <td class="text-end">$18000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>    
+        </div>
+      </div>
+
+      <!-- table 3 網站 -->
+      <div class="m-2 mb-7 mx-3">
+        <div id="tableExample2" data-list='{"valueNames":["name","email","age"],}'>
+          <div class="table-responsive scrollbar">
+            <table class="table  table-striped fs--1 mb-0">
+              <thead class="thead-bg">
+                <tr>
+                  <th colspan="3" class="thead-title">網站(RWD, 響應式網頁, 隨螢幕調整顯示)</th> 
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr>
+                  <td colspan="2">首頁(簡介, 選擇搜索條件等)</td>
+                  <td class="text-end">$8000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">部落格功能</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">社群登入(Line, Facebook, Apple 等)</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">商品列表</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">商品詳細</td>
+                  <td class="text-end">$12000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">購物車</td>
+                  <td class="text-end">$8000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">結帳流程</td>
+                  <td class="text-end">$15000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+    
+{% endblock %}
+
+
+ 

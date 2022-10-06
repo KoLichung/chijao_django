@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "zh-Hant" dir="ltr">
+<head>
+  <meta charset = "utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name = "viewport", content= "width = device-width, initial-scale = 1" >
+  <meta name = "robots" content = "index, follow">
+  <meta name = "description" content="有App的想法卻苦無合作夥伴為您實現嗎？齊家科技提供您雙平台技術一次給您 Android/iOS 兩款 App！齊家科技由成大校友創辦，我們秉持「窮理致知」(修身齊家)精神，努力探求未知事物，並運用於生活之上，使客戶與齊家科技得到雙贏。">
+  
+  <title>齊家科技</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'web/assets/img/logo_chi_jia.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web/assets/img/logo_chi_jia.png' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/assets/img/logo_chi_jia.png' %}">
+  <!-- css -->
+  <link rel="stylesheet" href="{% static 'web/vendors/swiper/swiper-bundle.min.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+  <link href="{% static 'web/vendors/overlayscrollbars/OverlayScrollbars.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/assets/css/theme.min.css' %}" rel="stylesheet" id="style-default">
+  <link href="{% static 'web/assets/css/user.css' %}" rel="stylesheet" id="user-style-default">
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark static-top" style="background-color: #092240;">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="{% static 'web/assets/img/logo_chi_jia.png' %}" alt="..." height="36">
+        <span class="text-white">齊家科技</span>   
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'works' %}">合作案例</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'price' %}">價位表</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">聯繫我們</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- content -->
+  {% block content %}{% endblock %}
+
+  <!-- footer -->
+  <footer class="footer-bg">
+    <div class="d-bloc text-center text-white ">
+      <div class="mx-6 mx-sm-6 mx-md-8 mx-lg-10 mt-4">
+        <span>齊家科技由成大校友創辦，我們秉持「窮理致知」(修身齊家)精神，努力探求未知事物，並運用於生活之上，使客戶與齊家科技得到雙贏。</span> <br>
+        <p class="mb-5">聯絡我們： jason@kosbrother.com</p>
+      </div>
+
+      <span class="footer-title">
+        <img src="{% static 'web/assets/img/logo_chi_jia.png' %}" alt="" style="height: 22px;" >
+        齊家科技 All Rights Reserved.
+      </span>
+
+    </div>
+  </footer>
+
+  <!-- JavaScripts -->
+    <script src="{% static 'web/vendors/popper/popper.min.js' %}"></script>
+    <script src="{% static 'web/vendors/bootstrap/bootstrap.min.js' %}"></script>
+    <script src="{% static 'web/vendors/anchorjs/anchor.min.js' %}"></script>
+    <script src="{% static 'web/vendors/is/is.min.js' %}"></script>
+    <script src="{% static 'web/vendors/swiper/swiper-bundle.min.js' %}"> </script>
+    <script src="{% static 'web/vendors/typed.js/typed.js' %}"></script>
+    <script src="{% static 'web/vendors/fontawesome/all.min.js' %}"></script>
+    <script src="{% static 'web/vendors/lodash/lodash.min.js' %}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="{% static 'web/vendors/list.js/list.min.js' %}"></script>
+    <script src="{% static 'web/assets/js/theme.js' %}"></script> 
+</body>
+</html>
