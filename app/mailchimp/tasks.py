@@ -9,8 +9,6 @@ def run():
   except ApiClientError as error:
     print('An exception occurred: {}'.format(error.text))
 
-run()
-
 
 
 def test_mail_to_jason():
@@ -23,18 +21,16 @@ def test_mail_to_jason():
         "text": "Welcome to Mailchimp Transactional!",
         "to": [
         {
-            "email": "freddie@example.com",
+            "email": "jason@kosbrother.com",
             "type": "to"
         }
         ]
     }
 
-    def run():
-      try:
-        response = mailchimp.messages.send({"message":message})
-        print('API called successfully: {}'.format(response))
-      except ApiClientError as error:
-        print('An exception occurred: {}'.format(error.text))
+    try:
+      response = mailchimp.messages.send({"message":message})
+      print('API called successfully: {}'.format(response))
+    except ApiClientError as error:
+      print('An exception occurred: {}'.format(error.text))
 
-    run()
 
