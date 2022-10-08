@@ -10,38 +10,39 @@
         <img class="card-img-top " src="{% static 'web/assets/img/contact_us.jpg' %}" alt="Card image cap" style="max-height: 200px; object-fit: cover;">
         <div class="card-body px-5 py-5">
           <h5 class="card-title">有任何點子、計畫想實現，歡迎您填寫<br>我們提供專業諮詢服務，以客戶滿意為服務宗旨！</h5>
-          <form action="">
+          <form action="" method="post" enctype="multipart/form-data">
+            
             <div class="row mt-4">
               <div class="col-12 col-lg-6">
                 <div class="mb-3">
-                  <label class="form-label" for="customUsername">姓名 <span class="form-valid-text">*必填</span></label>
-                  <input class="form-control has-validation" id="customUsername" type="text"/>
+                  <label class="form-label" for="customerName">姓名 <span class="form-valid-text">*必填</span></label>
+                  <input class="form-control has-validation" id="customerName" type="text" name="customerName" value="customerName"/>
                 </div>
               </div>
               <div class="col-12 col-lg-6">
                 <div class="mb-3">
-                  <label class="form-label" for="exampleFormControlInput1">聯絡信箱 <span class="form-valid-text">*必填</span></label>
-                  <input class="form-control" id="exampleFormControlInput1" type="email"/>
+                  <label class="form-label" for="customerEmail">聯絡信箱 <span class="form-valid-text">*必填</span></label>
+                  <input class="form-control" id="customerEmail" type="email" name="customerEmail" value="customerEmail"/>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-lg-6">
                 <div class="mb-3">
-                  <label class="form-label" for="exampleFormControlInput1">聯絡電話</label>
-                  <input class="form-control" id="exampleFormControlInput1" type="text" />
+                  <label class="form-label" for="customerPhone">聯絡電話</label>
+                  <input class="form-control" id="customerPhone" type="text" name="customerPhone" value="customerPhone"/>
                 </div>
               </div>
               <div class="col-12 col-lg-6">
                 <div class="mb-3">
-                  <label class="form-label" for="exampleFormControlInput1">LINE</label>
-                  <input class="form-control" id="exampleFormControlInput1" type="text"/>
+                  <label class="form-label" for="customerLine">LINE</label>
+                  <input class="form-control" id="customerLine" type="text" name="customerLine" value="customerLine"/>
                 </div>
               </div>
             </div>
             <div class="mb-3">
-              <label class="form-label" for="exampleFormControlTextarea1">需求說明 <span class="form-valid-text">*必填</span></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label class="form-label" for="customerSubject">需求說明 <span class="form-valid-text">*必填</span></label>
+              <textarea class="form-control" id="customerSubject" name="customerSubject" value="customerSubject" rows="3"></textarea>
             </div>
             <div class="text-center mt-5">
               <a href="{% url 'message_sent' %}" class="btn yellow-button" type="submit">送出</a>
