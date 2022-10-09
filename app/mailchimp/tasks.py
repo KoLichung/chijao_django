@@ -21,7 +21,7 @@ def test_mail_to_jason():
         "text": "Welcome to Mailchimp Transactional!",
         "to": [
         {
-            "email": "jason@kosbrother.com",
+            "email": "jason@chijia.com.tw",
             "type": "to"
         }
         ]
