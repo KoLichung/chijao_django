@@ -16,7 +16,7 @@ def test_mail_to_jason():
 
     mailchimp = MailchimpTransactional.Client('SQtcqkSt9MApMYOlAcvrQQ')
     message = {
-        "from_email": "manny@mailchimp.com",
+        "from_email": "jason@chijia.com.tw",
         "subject": "Hello world",
         "text": "Welcome to Mailchimp Transactional!",
         "to": [
