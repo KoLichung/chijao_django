@@ -6,6 +6,9 @@ from django.http import HttpResponse
 def privacy_policy_others(request):
     return render(request,'web/privacy_policy_others.html',)
 
+def suppervisionbuy_support(request):
+    return render(request,'web/suppervisionbuy_support.html',)
+
 def index(request):
     return render(request,'web/index.html')
 

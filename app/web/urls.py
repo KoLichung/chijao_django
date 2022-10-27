@@ -8,5 +8,5 @@ urlpatterns = [
     path('works', views.works, name='works'),
     path('contact', views.contact, name='contact'),
     path('message_sent', views.message_sent, name='message_sent'),
-
+    path('app/suppervisionbuy_support', views.suppervisionbuy_support)
 ]
