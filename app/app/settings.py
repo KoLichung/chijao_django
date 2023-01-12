@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'user',
     'web',
     'mailapp',
+    'django.contrib.sitemaps'
 ]
 
 MIDDLEWARE = [
