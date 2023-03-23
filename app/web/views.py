@@ -9,6 +9,9 @@ def privacy_policy_others(request):
 def suppervisionbuy_support(request):
     return render(request,'web/suppervisionbuy_support.html',)
 
+def house_manager_ken(request):
+    return render(request,'house_manager/ken.html',)
+
 def index(request):
     return render(request,'web/index.html')
 

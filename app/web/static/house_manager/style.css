@@ -1,0 +1,13 @@
+.line-through{
+    text-decoration:line-through;	
+}
+
+.footer{
+    color: #fff;
+    background-color: #444;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
