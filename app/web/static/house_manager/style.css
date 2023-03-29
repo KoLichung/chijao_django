@@ -14,21 +14,24 @@
 
 .navigation {
     position: relative;
-    display: flex;
+    flex: row wrap;
     justify-content: center;
     align-items: center;
  }
 
 .navigation ul {
     display: flex;
+    justify-content: space-between;
+    padding-left: 0;
 }
 
 .navigation ul li {
     position: relative;
     list-style: none;
-    width: 100px;
+    width: 4rem;
     height: 30px;
     z-index: 1;
+    margin: 0 10px;
 }
 
 .navigation ul li a {
@@ -37,16 +40,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     text-align: center;
-    font-weight: 500;
 }
 
 .navigation ul li a .text {
     position: absolute;
     color: #444;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1rem;
     transition: 0.5s;
     opacity: 1;
     transform: translateY(20px);
@@ -55,25 +56,49 @@
 .indicator {
     position: absolute;
     top: 30px;
-    width: 100px;
-    height: 10px;
+    width: 4rem;
+    height: 8px;
     background: rgb(255, 213, 0);
     transition: 0.5s;
+    margin: 0 10px;
 }
 
 /* Indicator Transitions */
 .navigation ul li:nth-child(1).active ~ .indicator {
-    transform: translateX(calc(100px * 0));
+    transform: translateX(calc(4rem * 0));
 }
 .navigation ul li:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(100px * 1));
+    transform: translateX(calc(4rem * 1 + 20px));
 }
 .navigation ul li:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(100px * 2));
+    transform: translateX(calc(4rem * 2 + 40px));
 }
 .navigation ul li:nth-child(4).active ~ .indicator {
-    transform: translateX(calc(100px * 3));
+    transform: translateX(calc(4rem * 3 + 60px));
 }
-/* .navigation ul li:nth-child(5).active ~ .indicator {
-    transform: translateX(calc(100px * 4));
-} */
+
+
+
+@media(min-width:576px){
+    .navigation ul li {
+        width: 100px;
+    }
+
+    .indicator {
+        width: 100px;
+    }
+
+    /* Indicator Transitions */
+    .navigation ul li:nth-child(1).active ~ .indicator {
+        transform: translateX(calc(100px * 0));
+    }
+    .navigation ul li:nth-child(2).active ~ .indicator {
+        transform: translateX(calc(100px * 1 + 20px));
+    }
+    .navigation ul li:nth-child(3).active ~ .indicator {
+        transform: translateX(calc(100px * 2 + 40px));
+    }
+    .navigation ul li:nth-child(4).active ~ .indicator {
+        transform: translateX(calc(100px * 3 + 60px));
+    }
+}
