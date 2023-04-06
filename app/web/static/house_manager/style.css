@@ -120,6 +120,16 @@ em{
     background-color: #f7ae11;
 }
 
+.line-button{
+    background-color: #07B53B;
+    color: white;
+}
+
+.line-button:hover{
+    background-color: white;
+    color: #07B53B;
+}
+
 #intro{
     text-align: justify;
 }

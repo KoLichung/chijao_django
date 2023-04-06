@@ -17,6 +17,8 @@ urlpatterns = [
     path('message_sent', views.message_sent, name='message_sent'),
     path('app/suppervisionbuy_support', views.suppervisionbuy_support),
     path('house_manager/ken', views.house_manager_ken),
+    path('house_manager/ken2', views.house_manager_ken2),
+    path('house_manager/ken3', views.house_manager_ken3),
 
     path('sitemap.xml', sitemap, 
             {'sitemaps': sitemaps},

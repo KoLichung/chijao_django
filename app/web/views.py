@@ -12,6 +12,12 @@ def suppervisionbuy_support(request):
 def house_manager_ken(request):
     return render(request,'house_manager/ken.html',)
 
+def house_manager_ken2(request):
+    return render(request,'house_manager/ken2.html',)
+
+def house_manager_ken3(request):
+    return render(request,'house_manager/ken3.html',)
+
 def index(request):
     return render(request,'web/index.html')
 
