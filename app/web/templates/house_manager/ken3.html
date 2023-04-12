@@ -23,50 +23,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-dark">
-    <header class="sticky-top">        
-        <nav class="navbar navbar-expand bg-dark ">
-            <div class="container-fluid">
-                <div class="mx-auto">
-                    <div class="navigation">
-                        <ul>
-                          <li class="list active">
-                            <a href="#about">
-                              <span class="text text-white ">關於我</span>
-                            </a>
-                          </li>
-                          <li class="list">
-                            <a href="#seller">
-                              <span class="text text-white ">親友見證</span>
-                            </a>
-                          </li>
-                          <li class="list">
-                            <a href="#compare">
-                              <span class="text text-white ">精選案件</span>
-                            </a>
-                          </li>
-                          <li class="list">
-                            <a href="#steps">
-                              <span class="text text-white " >常見問題</span>
-                            </a>
-                          </li>
-                          <div class="indicator"></div>
-                        </ul>
+
+    <section class="my-5 top-video">
+        <div class="container text-center">
+            <div class="row align-items-center">
+
+              <div class="col-12 col-md-7 col-lg-8">
+                <div class="video-mask">
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.youtube.com/embed/23uscL6nahw" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
-            </div>
-            
-            <script>
-                const list = document.querySelectorAll(".list");
+              </div>
 
-                function activeLink() {
-                    list.forEach((item) => item.classList.remove("active"));
-                    this.classList.add("active");
-                }
-                list.forEach((item) => item.addEventListener("click", activeLink));
-            </script>
-        </nav>
-        <hr>
-    </header>
+              <div class="col-12 col-md-5 col-lg-4 align-items-center">
+                <div class="text-white text-start my-3">
+                    <img class="avatar rounded-circle" src="{% static 'house_manager/images/ken_avatar.jpg' %}">
+                    <span class="name">KEN</span> 
+                </div>
+                <div class="video-title h2 text-white mb-2">不用派報發傳單、完全不懂網路的服務業房仲超業導客系統大公開(本課程為實體課程)</div>
+                <div class="video-subtitle text-white">價值九千元付費級內容|房仲超業百萬營收術49分鐘免費培訓影片</div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+        <header class="sticky-top">        
+            <nav class="navbar navbar-expand bg-dark ">
+                <div class="container-fluid">
+                    <div class="mx-auto">
+                        <div class="navigation">
+                            <ul>
+                              <li class="list active">
+                                <a href="#about">
+                                  <span class="text text-white ">關於我</span>
+                                </a>
+                              </li>
+                              <li class="list">
+                                <a href="#seller">
+                                  <span class="text text-white ">親友見證</span>
+                                </a>
+                              </li>
+                              <li class="list">
+                                <a href="#compare">
+                                  <span class="text text-white ">精選案件</span>
+                                </a>
+                              </li>
+                              <li class="list">
+                                <a href="#steps">
+                                  <span class="text text-white " >常見問題</span>
+                                </a>
+                              </li>
+                              <div class="indicator"></div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <script>
+                    const list = document.querySelectorAll(".list");
+    
+                    function activeLink() {
+                        list.forEach((item) => item.classList.remove("active"));
+                        this.classList.add("active");
+                    }
+                    list.forEach((item) => item.addEventListener("click", activeLink));
+                </script>
+            </nav>
+            <hr>
+        </header>
+    
 
     <article>
         <div class="container mt-4">

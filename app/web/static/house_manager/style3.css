@@ -6,6 +6,41 @@ body{
     font-family: 'Noto Sans TC', sans-serif;  /* @300;400;500;700;900 */
 }
 
+/* =============== ⬇︎⬇︎⬇︎ styles for top video ⬇︎⬇︎⬇︎ =============== */
+
+.top-video{
+    background-color: rgb(97, 89, 71);
+    padding: 5rem 0;
+}
+
+.video-mask{
+    border-radius: 30px; 
+    overflow: hidden; 
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+}
+
+.name{
+    font-size: 1.3rem;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.video-title{
+    text-align: left;
+}
+
+.video-subtitle{
+    text-align: left;
+}
+
+
+
+/* =============== ⬆︎⬆︎⬆︎ styles for top video ⬆︎⬆︎⬆︎ =============== */
+
 /* =============== ⬇︎⬇︎⬇︎ styles for header ⬇︎⬇︎⬇︎ =============== */
 .navigation {
     position: relative;
