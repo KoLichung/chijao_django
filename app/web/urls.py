@@ -10,6 +10,7 @@ sitemaps = {
 
 urlpatterns = [
     path('privacy_policy_others', views.privacy_policy_others, name='privacy_policy_others'),
+    path('privacy_policy_24h', views.privacy_policy_24h, name='privacy_policy_24h'),
     path('', views.index, name='index'),
     path('price', views.price, name='price'),
     path('works', views.works, name='works'),
